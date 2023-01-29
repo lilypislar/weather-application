@@ -29,5 +29,5 @@ function displayTemperature(response) {
 }
 let apiKey = "06bdaa9ff41fb26956c5ea7fe3ab59fa";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Warsaw&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
+
 axios.get(apiUrl).then(displayTemperature);
