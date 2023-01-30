@@ -15,6 +15,11 @@
     <title>Warsaw</title>
   </head>
   <body>
+    <div class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/sky.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
@@ -30,21 +35,17 @@
                 />
               </div>
               <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
+                <input type="submit" value="Search" class="btn btn-dark" ; />
               </div>
             </div>
           </form>
           <div class="overview">
             <h1 id="city"></h1>
 
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
+            <div class="last-updated">
+              Last updated: <span id="date"></span>
+            </div>
+            <div class="weather-type" id="description"></div>
           </div>
           <div class="row">
             <div class="col-6">
@@ -66,33 +67,18 @@
               </ul>
             </div>
           </div>
-          <div class="weather-forecast" id="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date">Tue</div>
-                <img
-                  src="
-                https://ssl.gstatic.com/onebox/weather/64/snow_light.png"
-                  alt=""
-                  width="42"
-                />
-                <div class="weather-forecast-temperature">
-                  <span class="weather-forecast-temperature-max">18°</span>
-                  <span class="weather-forecast-temperature-min">12°</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small>
-          <a
-            href="https://github.com/lilypislar/weather-application"
-            target="_blank"
-            >Open-source code
-          </a>
-          by Lily Pislar
-        </small>
       </div>
+    </div>
+    <div class="source-code">
+      <a
+        href="https://github.com/lilypislar/weather-application"
+        style="color: white"
+        target="_blank"
+        >Open-source code
+      </a>
+      by Lily Pislar
     </div>
     <script src="src/index.js"></script>
   </body>
